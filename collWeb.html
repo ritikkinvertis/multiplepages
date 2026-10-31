@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invertis University, Bareilly</title>
+  <link rel="stylesheet" href="college.css">
+</head>
+<body>
+
+  <div class="topbar">📍 Bareilly, Uttar Pradesh · Student website concept</div>
+
+  <header>
+    <nav>
+      <a class="brand" href="#home">
+        INVERTIS UNIVERSITY
+        <small>BAREILLY · UTTAR PRADESH</small>
+      </a>
+
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#campus">Campus</a>
+        <a href="#contact">Contact</a>
+        <a class="button" href="#programs">Explore programs</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">A student website concept · Bareilly, India</div>
+        <h1>Learn today.<br><span>Lead tomorrow.</span></h1>
+        <p>
+          Explore a university experience built around learning, discovery,
+          and the confidence to shape your future.
+        </p>
+        <a class="button" href="#programs">Explore programs →</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="about">
+        <div class="about-art">
+          <div class="book">
+            <strong>INVERTIS</strong><br>
+            <span>UNIVERSITY · BAREILLY</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow">A place to begin</div>
+          <h2>Build a future that feels like yours.</h2>
+          <p class="muted">
+            University is more than a classroom. It is a chance to ask better
+            questions, meet new perspectives, and turn the things you care
+            about into meaningful work.
+          </p>
+
+          <div class="checks">
+            <div>Learn by doing</div>
+            <div>Find your community</div>
+            <div>Explore new ideas</div>
+            <div>Prepare for what’s next</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="programs">
+      <div class="section">
+        <div class="section-title">
+          <div class="eyebrow">Find your direction</div>
+          <h2>Explore areas of study</h2>
+          <p class="muted">
+            These are sample study areas. Check official university information
+            for current courses and admissions.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Engineering &amp; Technology</h3>
+            <p>Explore design, technology, and solutions to real-world challenges.</p>
+          </article>
+
+          <article class="card">
+            <h3>Management &amp; Commerce</h3>
+            <p>Build a foundation in business, finance, and leadership.</p>
+          </article>
+
+          <article class="card">
+            <h3>Health &amp; Life Sciences</h3>
+            <p>Learn about health, life, and science.</p>
+          </article>
+
+          <article class="card">
+            <h3>Law &amp; Humanities</h3>
+            <p>Explore society, communication, culture, and law.</p>
+          </article>
+
+          <article class="card">
+            <h3>Computer Applications</h3>
+            <p>Discover software, computing, and digital tools.</p>
+          </article>
+
+          <article class="card">
+            <h3>Creative Studies</h3>
+            <p>Bring imagination and practical skills together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="campus" class="campus">
+      <div class="section about">
+        <div>
+          <div class="eyebrow">More than a classroom</div>
+          <h2>Make room for discovery.</h2>
+          <p class="muted">
+            Campus life gives you space to learn alongside others, try something
+            new, and build memories that stay with you.
+          </p>
+          <p><strong>Learn together</strong> — share ideas and collaborate.</p>
+          <p><strong>Find your people</strong> — meet classmates with new perspectives.</p>
+          <p><strong>Take the next step</strong> — turn curiosity into skills.</p>
+        </div>
+
+        <div class="campus-art">Your university journey<br>starts here</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section">
+        <div class="section-title">
+          <div class="eyebrow">Contact</div>
+          <h2>Say hello to Ritik.</h2>
+          <p class="muted">
+            This student website concept was created by Ritik Rajput.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Ritik Rajput</h3>
+            <p><strong>College:</strong> Invertis University, Bareilly</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:ritikrajput7466@gmail.com">ritikrajput7466@gmail.com</a>
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+917466067889">+91 74660 67889</a>
+            </p>
+          </div>
+
+          <form id="contactForm">
+            <h3>Send a message</h3>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message"></textarea>
+
+            <br><br>
+            <button class="button" type="submit">Open email app →</button>
+            <p class="note">
+              This opens your email app with a draft. It does not send or store messages.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>INVERTIS UNIVERSITY · BAREILLY</strong>
+    <p>Student website concept by Ritik Rajput</p>
+    <small>This is not the official Invertis University website.</small>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const form = new FormData(event.currentTarget);
+      const name = form.get("name");
+      const email = form.get("email");
+      const message = form.get("message");
+
+      const subject = encodeURIComponent("Website message from " + name);
+      const body = encodeURIComponent(
+        "From: " + name + " (" + email + ")\n\n" + message
+      );
+
+      window.location.href =
+        "mailto:ritikrajput7466@gmail.com?subject=" + subject + "&body=" + body;
+    });
+  </script>
+</body>
+</html>
